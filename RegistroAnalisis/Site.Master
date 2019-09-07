@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RegistroAnalisis.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <%--   <%-- <link href="/content/bootstrap.min.css" rel="stylesheet" />--%>
+    <link href="/content/toastr.css" rel="stylesheet" />
+  <%--  <script src="/Scripts/jquery-3.0.0.min.js"></script>--%>
+<%--    <script src="/Scripts/bootstrap.min.js"></script>--%>
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/toastr.min.js"></script>
+    <title>Analisis.do</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <nav class="navbar navbar-inverse">
+
+        <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Registros</a></li>
+                        <li><a runat="server" href="~/">Consultas</a></li>
+                    </ul>
+                </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Registro Analisis</p>
+            </footer>
+        </div>
+</body>
+</html>
