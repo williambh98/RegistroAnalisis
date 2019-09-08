@@ -41,3 +41,8 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\obj\Debug\R
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\obj\Debug\RegistroAnalisis.csproj.CopyComplete
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\obj\Debug\RegistroAnalisis.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\obj\Debug\RegistroAnalisis.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Entidades.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\DAL.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Entidades.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\DAL.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\DAL.dll.config
