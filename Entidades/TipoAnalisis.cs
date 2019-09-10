@@ -17,7 +17,6 @@ namespace Entidades
         {
             TipoID = 0;
             Descripcion = string.Empty;
-            Analisis ana = new Analisis();
         }
        
         

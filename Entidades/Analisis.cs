@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,10 @@ namespace Entidades
         public int AnalisisID { get; set; }
         public int PacienteID { get; set; }
         public DateTime fecha { get; set; }
-
+        [ForeignKey("PacienteID")]
+        public virtual Pacientes Pacientes { get; set; }
         public virtual List<DetalleAnalisis> detalle { get; set; }
-
+       
         public Analisis()
         {
             AnalisisID = 0;
