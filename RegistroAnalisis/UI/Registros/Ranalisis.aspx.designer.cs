@@ -13,6 +13,24 @@ namespace RegistroAnalisis.UI.Registros {
     public partial class Ranalisis {
         
         /// <summary>
+        /// LabelID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelID;
+        
+        /// <summary>
+        /// BuscarButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BuscarButton;
+        
+        /// <summary>
         /// IdTextBox control.
         /// </summary>
         /// <remarks>
@@ -22,31 +40,31 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.TextBox IdTextBox;
         
         /// <summary>
-        /// BusquedaButton control.
+        /// LabelFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton BusquedaButton;
+        protected global::System.Web.UI.WebControls.Label LabelFecha;
         
         /// <summary>
-        /// PacienteTextBox control.
+        /// fechaTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PacienteTextBox;
+        protected global::System.Web.UI.WebControls.TextBox fechaTextBox;
         
         /// <summary>
-        /// VPacienteTextBox control.
+        /// PacientsDropdownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator VPacienteTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList PacientsDropdownList;
         
         /// <summary>
         /// TipoDropDownList control.
@@ -92,6 +110,15 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ErrorLabel;
+        
+        /// <summary>
+        /// NuevoButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NuevoButton;
         
         /// <summary>
         /// GuadarButton control.
