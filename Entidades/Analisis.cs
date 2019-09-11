@@ -27,13 +27,24 @@ namespace Entidades
             this.detalle = new List<DetalleAnalisis>();
         }
 
+        public void AgragarDetalle(int DetalleID, int analisisID, int TipoID, string resultado)
+        {
+            this.detalle.Add(new DetalleAnalisis(DetalleID, analisisID, TipoID, resultado));
+        }
+
         public Analisis(int analisisID, int pacienteID, DateTime fecha, List<DetalleAnalisis> detalle)
         {
             AnalisisID = analisisID;
             PacienteID = pacienteID;
             this.fecha = fecha;
             this.detalle = detalle;
-        } 
+        }
+    
+
+        public void RemoverDetalle(int Index)
+        {
+            this.detalle.RemoveAt(Index);
+        }
     }    
 
 

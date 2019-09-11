@@ -16,19 +16,33 @@ namespace Entidades
         
         public int AnalisisID { get; set; }
 
+        public int TipoID { get; set; }
+
         public string resultado { get; set; }
 
         [ForeignKey("TipoID")]
         public virtual TipoAnalisis TipoAnalisis { get; set; }
+
+        [ForeignKey("AnalisisID")]
+        public virtual Analisis Analisis { get; set; }
+
+        
+
+
         public DetalleAnalisis()
         {
-
+            DetalleID = 0;
+            AnalisisID = 0;
+            resultado = string.Empty;
+            TipoID = 0;
         }
 
-        public DetalleAnalisis(int detalleID, int analisisID)
+        public DetalleAnalisis(int detalleID, int analisisID, int tipoID, string resultado)
         {
             DetalleID = detalleID;
             AnalisisID = analisisID;
+            TipoID = tipoID;
+            this.resultado = resultado;
         }
     }
 }

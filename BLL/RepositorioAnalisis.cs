@@ -21,9 +21,9 @@ namespace BLL
                 {
                     string s = item.TipoAnalisis.Descripcion;
                 }
-                
+
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -35,23 +35,37 @@ namespace BLL
             bool paso = false;
             try
             {
+                var Anterior = _contexto.Analisis.Find(analisis.AnalisisID);
+                foreach (var item in Anterior.detalle)
+                {
+                    if (!analisis.detalle.Exists(d => d.DetalleID == item.DetalleID))
+                    {
+                        item.TipoAnalisis = null;
+                        _contexto.Entry(item).State = System.Data.Entity.EntityState.Deleted;
+                    }
+                }
                 foreach (var item in analisis.detalle)
                 {
-                    var estado = item.AnalisisID > 0 ? EntityState.Modified : EntityState.Added;
-                    _contexto.Entry(analisis).State = estado;
+
+                    var estado = item.DetalleID > 0 ? EntityState.Modified : EntityState.Added;
+                    if (_contexto.SaveChanges() > 0)
+                    {
+                        paso = true;
+                    }
+                    _contexto.Entry(analisis).State = EntityState.Modified;
+                    if (_contexto.SaveChanges() > 0)
+                        paso = true;
+
+
 
                 }
-
-                _contexto.Entry(analisis).State = EntityState.Modified;
-
-                if (_contexto.SaveChanges() > 0)
-                    paso = true;
             }
-            catch(Exception)
+            catch
             {
                 throw;
             }
             return paso;
         }
+
     }
 }

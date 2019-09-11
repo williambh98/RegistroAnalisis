@@ -13,17 +13,20 @@ namespace Entidades
         public int TipoID { get; set; }
         public string Descripcion { get; set; }
 
+        public DateTime fecha { get; set; }
+
         public TipoAnalisis()
         {
             TipoID = 0;
             Descripcion = string.Empty;
+            fecha = DateTime.Now;
         }
-       
-        
-        public TipoAnalisis(int tipoID, string descripcion)
+
+        public TipoAnalisis(int tipoID, string descripcion, DateTime fecha)
         {
             TipoID = tipoID;
             Descripcion = descripcion;
+            this.fecha = fecha;
         }
     }
 }
