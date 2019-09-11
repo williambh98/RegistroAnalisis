@@ -94,9 +94,9 @@
         <div class="text-center">
             <div class="form-group" style="display: inline-block">
 
-                <asp:Button Text="Nuevo" class="btn btn-warning btn-sm" runat="server" ID="NuevoButton" />
-                <asp:Button Text="Guardar" class="btn btn-success btn-sm" runat="server" ID="GuadarButton" />
-                <asp:Button Text="Eliminar" class="btn btn-danger btn-sm" runat="server" ID="EliminarButton" />
+                <asp:Button Text="Nuevo" class="btn btn-warning btn-sm" runat="server" ID="NuevoButton"OnClick="NuevoButton_Click" />
+                <asp:Button Text="Guardar" class="btn btn-success btn-sm" runat="server" ID="GuadarButton" OnClick="GuadarButton_Click" />
+                <asp:Button Text="Eliminar" class="btn btn-danger btn-sm" runat="server" ID="EliminarButton"  OnClick="EliminarButton_Click"/>
 
             </div>
         </div>
