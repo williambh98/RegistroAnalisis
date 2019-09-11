@@ -36,7 +36,9 @@ namespace RegistroAnalisis.UI.Registros
                     if (user == null)
                         Utils.ShowToastr(this, "Id no existe", "Error", "error");
                     else
+                        LlenarCombo();
                         LlenarCampo(user);
+
 
                 }
                 else
@@ -47,6 +49,7 @@ namespace RegistroAnalisis.UI.Registros
         }
         protected void BindGrid()
         {
+
             DatosGridView.DataSource = ((Analisis)ViewState["Analisis"]).detalle;
             DatosGridView.DataBind();
         }
@@ -61,7 +64,8 @@ namespace RegistroAnalisis.UI.Registros
             analisis = (Analisis)ViewState["Analisis"];
 
             analisis.AnalisisID = Utils.ToInt(IdTextBox.Text);
-            analisis.PacienteID = Utils.ToInt(PacienteTextBox.Text);
+            analisis.PacienteID = PacientsDropdownList.SelectedValue.Length;
+            analisis.fecha = DateTime.Now;
             analisis.detalle = detalles;
             return analisis;
 
@@ -69,31 +73,36 @@ namespace RegistroAnalisis.UI.Registros
         private void Limpiar()
         {
             IdTextBox.Text = string.Empty;
-            PacienteTextBox.Text = string.Empty;
-            TipoDropDownList.SelectedIndex = 0;
+            PacientsDropdownList.ClearSelection();
+            TipoADropdonwList.SelectedIndex = 0;
             DatosGridView.DataSource = null;
             DatosGridView.DataBind();
         }
 
         private void LlenarCampo(Analisis analisis)
         {
-            TipoDropDownList.DataSource = repositorio.GetList(x => true);
-            TipoDropDownList.DataValueField = "ID";
-            TipoDropDownList.DataTextField = "Descripcion";
-            TipoDropDownList.AppendDataBoundItems = true;
-            TipoDropDownList.DataBind();
-            DatosGridView.DataSource = analisis.detalle;
-            DatosGridView.DataBind();
+            Limpiar();
+            AnalisisID.Text = analisis.AnalisisID.ToString();
+            PacientsDropdownList.SelectedValue = analisis.PacienteID.ToString();
+            LabelFecha.Text = analisis.fecha.ToString();
+            //ViewState[KeyViewState] = analisis;
+            this.BindGrid();
         }
-        private void llenarDrownList()
+        private void LlenarCombo()
         {
-            TipoDropDownList.DataSource = repositorio.GetList(x => true);
-            TipoDropDownList.DataValueField = "ID";
-            TipoDropDownList.DataTextField = "Descripcion";
-            TipoDropDownList.AppendDataBoundItems = true;
-            TipoDropDownList.DataBind();
+            TipoADropdonwList.Items.Clear();
+            TipoADropdonwList.Items.Clear();
+            RepositorioBase<TipoAnalisis> repositorio = new RepositorioBase<TipoAnalisis>();
+            TipoADropdonwList.DataSource = repositorio.GetList(x => true);
+            TipoADropdonwList.DataValueField = "TipoID";
+            TipoADropdonwList.DataTextField = "Descripcion";
+            TipoADropdonwList.DataBind();
 
-
+            RepositorioBase<Pacientes> repositorioPacientes = new RepositorioBase<Pacientes>();
+            PacientsDropdownList.DataSource = repositorioPacientes.GetList(x => true);
+            PacientsDropdownList.DataValueField = "PacienteID";
+            PacientsDropdownList.DataTextField = "Nombre";
+            PacientsDropdownList.DataBind();
         }
         protected void AddLinkButton_Click(object sender, EventArgs e)
         {
@@ -141,6 +150,26 @@ namespace RegistroAnalisis.UI.Registros
 
         }
 
+        protected void AgregarButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(ResultadoATextBox.Text))
+                return;
+            Analisis analisis = new Analisis();
+           // analisis = ViewState[KeyViewState].ToAnalisis();
+            analisis.AgragarDetalle(0, analisis.AnalisisID, tipoADropdonwList.SelectedValue.Length, ResultadoATextBox.Text);
+           // ViewState[KeyViewState] = analisis;
+            this.BindGrid();
+            ResultadoATextBox.Text = string.Empty;
+        }
+        protected void AgregarAnaliss_Click(object sender, EventArgs e)
+        {
+            RepositorioBase<TipoAnalisis> repositorio = new RepositorioBase<TipoAnalisis>();
+            if (!string.IsNullOrEmpty(DescripcionTextBox.Text))
+            {
+                repositorio.Guardar(new TipoAnalisis(0, DescripcionTextBox.Text, DateTime.Now));
+            }
+            LlenarCombo();
+        }
         protected void GuardarButton_Click(object sender, EventArgs e)
             {
             RepositorioAnalisis repositorio = new RepositorioAnalisis();
