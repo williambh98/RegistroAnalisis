@@ -125,6 +125,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="UI\Consultas\Canalisis.aspx" />
+    <Content Include="UI\Consultas\CTipoAnalisis.aspx" />
     <Content Include="UI\Registros\Ranalisis.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -162,6 +163,13 @@
     </Compile>
     <Compile Include="UI\Consultas\Canalisis.aspx.designer.cs">
       <DependentUpon>Canalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\CTipoAnalisis.aspx.cs">
+      <DependentUpon>CTipoAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\CTipoAnalisis.aspx.designer.cs">
+      <DependentUpon>CTipoAnalisis.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\Ranalisis.aspx.cs">
       <DependentUpon>Ranalisis.aspx</DependentUpon>

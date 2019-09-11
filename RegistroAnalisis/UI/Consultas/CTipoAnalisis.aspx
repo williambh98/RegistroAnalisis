@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Canalisis.aspx.cs" Inherits="RegistroAnalisis.UI.Consultas.Canalisis" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CTipoAnalisis.aspx.cs" Inherits="RegistroAnalisis.UI.Consultas.CTipoAnalisis" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -10,8 +10,8 @@
                 <div class="col-md-2">
                     <asp:DropDownList ID="BuscarPorDropDownList" runat="server" CssClass="form-control input-sm" >
                         <asp:ListItem>Todos</asp:ListItem>
-                        <asp:ListItem>AnalisisID</asp:ListItem>
-                        <asp:ListItem>Nombres</asp:ListItem>
+                        <asp:ListItem>TipoID</asp:ListItem>
+                        <asp:ListItem>Descripcion</asp:ListItem>
                          <asp:ListItem>Fecha</asp:ListItem>
                     </asp:DropDownList>
                 </div>
@@ -46,7 +46,7 @@
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:HyperLinkField ControlStyle-ForeColor="blue"
-                            DataNavigateUrlFields="AnalisisID"
+                            DataNavigateUrlFields="TipoID"
                             
                             DataNavigateUrlFormatString="~/UI/Registros/Ranalisis.aspx?Id={0}"
                             Text="Editar"></asp:HyperLinkField>
@@ -57,4 +57,6 @@
             </div>
         </div>
     </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
 </asp:Content>

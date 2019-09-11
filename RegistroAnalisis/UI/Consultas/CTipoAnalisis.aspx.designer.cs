@@ -10,7 +10,7 @@
 namespace RegistroAnalisis.UI.Consultas {
     
     
-    public partial class Canalisis {
+    public partial class CTipoAnalisis {
         
         /// <summary>
         /// BuscarPorDropDownList control.
