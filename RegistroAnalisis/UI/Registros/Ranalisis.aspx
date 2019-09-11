@@ -38,8 +38,6 @@
                         <label for="TipoDropDownList" class="col-md-3 control-label input-sm">Tipo Analisis:</label>
                         <div class="col-md-8">
                             <asp:DropDownList ID="TipoDropDownList" Class=" col-md-1 col-sm-2 col-xs-4" AppendDataBoundItems="true" runat="server" Height="2.5em">
-                                <asp:ListItem Text="Administrador" Value="0"></asp:ListItem>
-                                <asp:ListItem Text="Usuario" Value="1"></asp:ListItem>
                             </asp:DropDownList>
                         </div>
                     </div>
