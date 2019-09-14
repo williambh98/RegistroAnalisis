@@ -50,7 +50,7 @@
                             </asp:DropDownList>
                         </div> 
                       <%-- <asp:Button Text="Agregar" class="btn btn-info" runat="server" ID="Button1" data-toggle="modal" data-target="#TipoanalisisModal" />--%>
-                       <button aria-describedby="TipoADropdonwList" type="button" class="btn btn-info" data-toggle="modal" data-target="#TipoanalisisModal" runat="server">+</button>
+                       <button aria-describedby="TipoADropdonwList" type="button" class="btn btn-info" data-toggle="modal" data-target="#TipoAModal" runat="server">+</button>
                     </div>
                     <%--Resultados--%>
                     <div class="form-group">
@@ -73,7 +73,7 @@
                                  <asp:TemplateField ShowHeader="False" HeaderText="Remover">
                                     <ItemTemplate>
                                         <asp:Button ID="RemoveLinkButton" runat="server" CausesValidation="false" CommandName="Select"
-                                            Text="--- " class="btn btn-danger btn-sm" OnClick="RemoveLinkButton_Click" />
+                                            Text="---------- " class="btn btn-success btn-sm" OnClick="RemoveLinkButton_Click" />
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <%--<asp:HyperLinkField ControlStyle-ForeColor="blue"
@@ -85,9 +85,8 @@
                         </asp:GridView>
                     </div>
                     <%--Remover--%>
-                   <%-- <div class="col-md-6 col-md-offset-0">
+                  <%--  <div class="col-md-6 col-md-offset-0">
                         <asp:Button ID="RemoverClick" runat="server" CausesValidation="false" CommandName="Select" Text="Remover" class="btn btn-danger btn-sm" OnClick="RemoveLinkButton_Click" />
-
                     </div>--%>
                 </div>
 
@@ -109,15 +108,15 @@
             </div>
         </div>
     </div>
-    <!-- Modal agregar analisis -->
+<%--    <!-- Modal agregar analisis -->
 
     <div class="modal fade" id="TipoanalisisModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-<%--        <div class="modal" tabindex="-1" role="dialog">--%>
+      
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Agragar analsiis</h5>
-                        <button type="button" class="Cerrar" data-dismiss="modal" aria-label="Cerrar">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -133,6 +132,32 @@
                 <asp:Button ID="AgregarAnaliss" class="btn btn-success" Text="Guardar" runat="server" data-dismiss="modal" UseSubmitBehavior="false" OnClick="AgregarAnalis_Click"/>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
+        </div>--%>
+    <div class="modal fade" id="TipoAModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ml-sm-auto" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AgregarAnalisisLB">Agregar Analisis Rapido!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="DescripcionLb">Descripción </span>
+                        </div>
+                        <div aria-describedby="DescripcionLb">
+                            <asp:TextBox ID="DescripcionTextBox" runat="server" class="form-control input-sm"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <asp:Button ID="AgregarAnaliss" class="btn btn-success" Text="Guardar" runat="server" data-dismiss="modal" UseSubmitBehavior="false" OnClick="AgregarAnalis_Click" />
+                </div>
+            </div>
         </div>
-<%--    </div>--%>
+    </div>
+  
 </asp:Content>

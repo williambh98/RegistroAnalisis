@@ -181,6 +181,13 @@ namespace RegistroAnalisis.UI.Registros
         {
             GridViewRow grid = DatosGridView.SelectedRow;
             RepositorioAnalisis repositorio = new RepositorioAnalisis();
+
+
+            if (IdTextBox.Text == 0.ToString())
+            {
+                Utils.ShowToastr(this.Page, "Id no exite", "success");
+                return;
+            }
             if (repositorio.Eliminar(Utils.ToInt(IdTextBox.Text)))
             {
                 Utils.ShowToastr(this.Page, "Exito Eliminado", "success");

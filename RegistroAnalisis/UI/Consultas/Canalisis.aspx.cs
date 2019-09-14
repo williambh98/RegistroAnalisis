@@ -20,7 +20,7 @@ namespace RegistroAnalisis.UI.Consultas
         {
             Expression<Func<Analisis, bool>> filtro = x => true;
             RepositorioBase<Analisis> repositorio = new RepositorioBase<Analisis>();
-            List<TipoAnalisis> TiposAnalisis = new RepositorioBase<TipoAnalisis>().GetList(x => true);
+           // List<TipoAnalisis> TiposAnalisis = new RepositorioBase<TipoAnalisis>().GetList(x => true);
             int id;
             switch (BuscarPorDropDownList.SelectedIndex)
             {
@@ -36,10 +36,10 @@ namespace RegistroAnalisis.UI.Consultas
                     filtro = c => c.PacienteID == id;
                     break;
             }
-            //DateTime fechaDesde = DesdeTextBox.Text.ToDatetime();
-            ////DateTime FechaHasta = HastaTextBox.Text.ToDatetime();
-            //List<Analisis> lista = repositorio.GetList(filtro).Where(c => c.fecha >= Desde && c.fecha <= Hasta).ToList();
-            //this.BindGrid(lista);
+            DateTime desdeTextBox = Utilitarios.Utils.ToFecha(DesdeTextBox.Text);
+            DateTime FechaHasta = Utilitarios.Utils.ToFecha(HastaTextBox.Text);
+            List<Analisis> lista = repositorio.GetList(filtro).Where(c => c.fecha.Date >= desdeTextBox && c.fecha.Date <= FechaHasta).ToList();
+            this.BindGrid(lista);
         }
         private void BindGrid(List<Analisis> lista)
         {
