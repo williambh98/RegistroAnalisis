@@ -1,8 +1,13 @@
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\BLL.dll.config
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\BLL.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\BLL.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\Entidades.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.dll.config
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\Entidades.pdb
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.xml
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
@@ -10,8 +15,3 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csproj.Cor
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.pdb
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.dll
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\Entidades.dll
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.pdb
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\DAL.dll.config
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\Entidades.pdb

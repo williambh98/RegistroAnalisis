@@ -16,11 +16,9 @@ namespace BLL
             try
             {
                 analisis = _contexto.Analisis.Find(id);
-                analisis.detalle.Count();
-                foreach (var item in analisis.detalle)
-                {
-                    string s = item.TipoAnalisis.Descripcion;
-                }
+                if(analisis != null)
+                    analisis.detalle.Count();
+               
 
             }
             catch (Exception)

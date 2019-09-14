@@ -13,13 +13,13 @@ namespace RegistroAnalisis.UI.Registros {
     public partial class Ranalisis {
         
         /// <summary>
-        /// AnalisisID control.
+        /// IdTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AnalisisID;
+        protected global::System.Web.UI.WebControls.TextBox IdTextBox;
         
         /// <summary>
         /// BuscarButton control.
@@ -31,22 +31,22 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.Button BuscarButton;
         
         /// <summary>
-        /// IdTextBox control.
+        /// RequiredFieldValidator4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdTextBox;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// LabelFecha control.
+        /// IdRegularExpressionValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelFecha;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator IdRegularExpressionValidator;
         
         /// <summary>
         /// fechaTextBox control.
@@ -67,31 +67,31 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.DropDownList PacientsDropdownList;
         
         /// <summary>
-        /// tipoADropdonwList control.
+        /// TipoADropdonwList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList tipoADropdonwList;
+        protected global::System.Web.UI.WebControls.DropDownList TipoADropdonwList;
         
         /// <summary>
-        /// ResultadoATextBox control.
+        /// ResultadoTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ResultadoATextBox;
+        protected global::System.Web.UI.WebControls.TextBox ResultadoTextBox;
         
         /// <summary>
-        /// AgregarButton control.
+        /// ResultadoButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AgregarButton;
+        protected global::System.Web.UI.WebControls.Button ResultadoButton;
         
         /// <summary>
         /// DatosGridView control.
@@ -101,33 +101,6 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView DatosGridView;
-        
-        /// <summary>
-        /// LabelCantidad control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelCantidad;
-        
-        /// <summary>
-        /// CantidadATextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CantidadATextBox;
-        
-        /// <summary>
-        /// RemoverClick control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RemoverClick;
         
         /// <summary>
         /// ErrorLabel control.
@@ -166,6 +139,24 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.Button EliminarButton;
         
         /// <summary>
+        /// EliminarRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EliminarRequiredFieldValidator;
+        
+        /// <summary>
+        /// EliminarRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EliminarRegularExpressionValidator;
+        
+        /// <summary>
         /// DescripcionTextBox control.
         /// </summary>
         /// <remarks>
@@ -175,12 +166,12 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.TextBox DescripcionTextBox;
         
         /// <summary>
-        /// AgragarA control.
+        /// AgregarAnaliss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton AgragarA;
+        protected global::System.Web.UI.WebControls.Button AgregarAnaliss;
     }
 }

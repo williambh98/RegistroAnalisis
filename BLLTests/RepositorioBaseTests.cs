@@ -46,7 +46,7 @@ namespace BLL.Tests
             Pacientes pacientes = new Pacientes();
             RepositorioBase<Pacientes> repositorioBase = new RepositorioBase<Pacientes>();
             pacientes = repositorioBase.Buscar(id);
-            Assert.IsNotNull(pacientes);
+            Assert.AreEqual(true,pacientes!=null);
         }
 
         [TestMethod()]
