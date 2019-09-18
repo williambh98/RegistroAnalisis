@@ -47,6 +47,7 @@ namespace RegistroAnalisis.UI.Registros
             analisis.PacienteID = PacientsDropdownList.SelectedValue.Length;
             analisis.fecha = DateTime.Now;
             analisis.Monto = 0;
+            analisis.detalle.ForEach(T => analisis.Monto += new RepositorioBase<TipoAnalisis>().Buscar(T.TipoID).Monto);
             return analisis;
         }
         private void Limpiar()
@@ -145,17 +146,17 @@ namespace RegistroAnalisis.UI.Registros
         }
         public void CalcularMonto()
         {
-            //decimal Monto = 0;
-            //Analisis analisis = new Analisis();
-            //analisis = (Analisis)ViewState["Analisis"];
-            //foreach (var item in analisis.
-            //{
-            //    TipoAnalisis tipo = new RepositorioBase<TipoAnalisis>().Buscar(item.TipoAnalisisID);
-            //    Monto += tipo.EsNulo() ? 0 : tipo.Monto;
-            //}
-            //analisis.Monto = Monto;
-            //ViewState[KeyViewState] = analisis;
-            //this.BindGrid();
+            decimal Monto = 0;
+            Analisis analisis = new Analisis();
+            analisis = (Analisis)ViewState["Analisis"];
+            foreach (var item in analisis.detalle.ToList())
+            {
+                TipoAnalisis T = new RepositorioBase<TipoAnalisis>().Buscar(item.TipoID);
+                Monto += T.Monto;
+            }
+            analisis.Monto = Monto;
+            ViewState["Analisis"] = analisis;
+            this.BindGrid();
         }
         protected void GuardarButton_Click(object sender, EventArgs e)
         {

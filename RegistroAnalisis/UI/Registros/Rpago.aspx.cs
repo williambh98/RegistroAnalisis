@@ -59,7 +59,6 @@ namespace RegistroAnalisis.UI.Registros
         }
         private void LlenarCampo(Pago pago)
         {
-            Limpiar();
             IdTextBox.Text = pago.IDpago.ToString();
             ViewState["Pago"] = pago;
             this.BindGrid();
@@ -74,7 +73,7 @@ namespace RegistroAnalisis.UI.Registros
             AnalisisDropdownList.DataBind();
           
         }
-        protected void buscarButton_Click(object sender, EventArgs e)
+        protected void BuscarButton_Click(object sender, EventArgs e)
         {
             RepositorioBase<Pago> rep = new RepositorioBase<Pago>();
             Pago a = rep.Buscar(Utils.ToInt(IdTextBox.Text));
@@ -177,7 +176,10 @@ namespace RegistroAnalisis.UI.Registros
          if (AnalisisDropdownList.Items.Count > 0)
             {
                 int AnalisisID = AnalisisDropdownList.SelectedValue.Length;
-
+                RepositorioAnalisis repositorio = new RepositorioAnalisis();
+                Analisis analisis = repositorio.Buscar(AnalisisID);
+                BalanceTextBox.Text = analisis.Balance.ToString();
+                repositorio.Dispose();
             }
         }
     }

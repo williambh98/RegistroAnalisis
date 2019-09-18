@@ -62,13 +62,13 @@
                         <asp:Button class="btn btn-info btn-sm" ID="ResultadoButton" runat="server" Text="Agregar" OnClick="AgregarButton_Click" />
                     </div>
 
-                  <%--  Monto--%>
+                    <%--  Monto--%>
                     <div class="form-group">
                         <label for="MontoTextBox" class="col-md-3 control-label input-sm">Monto: </label>
                         <div class="col-md-3">
                             <asp:TextBox class="form-control input-sm" ReadOnly="True" ID="MontoTextBox" Text="0" runat="server"></asp:TextBox>
                         </div>
-                  <%--Balance--%>
+                        <%--Balance--%>
                         <label for="BalanceTextBox" class="col-md-1 control-label input-sm">Balance: </label>
                         <div class="col-md-3">
                             <asp:TextBox class="form-control input-sm" ReadOnly="true" ID="BalanceTextBox" Text="0" runat="server"></asp:TextBox>
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="modal fade" id="TipoAModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog ml-sm-auto" role="document">
             <div class="modal-content">
