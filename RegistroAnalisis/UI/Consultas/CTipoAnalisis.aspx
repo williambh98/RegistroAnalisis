@@ -27,7 +27,7 @@
                <%--Selercionar solo por fecha--%>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <asp:CheckBox AutoPostBack="true" Checked="true" OnCheckedChanged="fechaCheckBox_CheckedChanged" ID="fechaCheckBox" runat="server" Text="Filtrar solo por fecha" />
+                            <asp:CheckBox AutoPostBack="true" Checked="true" OnCheckedChanged="FechaCheckBox_CheckedChanged" ID="fechaCheckBox" runat="server" Text="Filtrar solo por fecha" />
                         </div>
                     </div>
             <%--Rango fecha--%>

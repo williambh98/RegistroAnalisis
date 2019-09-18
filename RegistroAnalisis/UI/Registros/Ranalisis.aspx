@@ -126,7 +126,7 @@
         <div class="modal-dialog ml-sm-auto" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="AgregarAnalisisLB">Agregar Analisis Rapido!!</h5>
+                    <h5 class="modal-title" id="AgregarAnalisisLB">Agregar Analisis</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -136,11 +136,10 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="DescripcionLb">Descripción </span>
                         </div>
-                        <div aria-describedby="DescripcionLb">
+                        <div aria-describedby="Descripcion">
                             <asp:TextBox ID="DescripcionTextBox" runat="server" class="form-control input-sm"></asp:TextBox>
                         </div>
                     </div>
-                </div>
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text" id="PrecioLB">Precio </span>
@@ -157,5 +156,4 @@
             </div>
         </div>
     </div>
-
 </asp:Content>

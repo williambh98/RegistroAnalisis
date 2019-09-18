@@ -51,11 +51,10 @@
                         <div class="col-md-4">
                             <asp:TextBox class="form-control" ID="fechaTextBox" TextMode="Date" runat="server"></asp:TextBox>
                         </div>
-                    </div>
                           <%--Agregar--%>
-                        </div>
-                        <asp:Button class="btn btn-info btn-sm" ID="AgregarButton" runat="server" Text="Agregar" OnClick="AgregarButton_Click" />
+                         <asp:Button class="btn btn-info btn-sm" ID="AgregarButton" runat="server" Text="Agregar" OnClick="AgregarButton_Click" />
                     </div>
+                        
       
                  <%--GRID--%>
                <div class="row">

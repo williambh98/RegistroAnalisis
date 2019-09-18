@@ -12,6 +12,7 @@ namespace RegistroAnalisis.UI.Consultas
 {
     public partial class Canalisis : System.Web.UI.Page
     {
+        static List<Analisis> lista = new List<Analisis>();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,6 +21,7 @@ namespace RegistroAnalisis.UI.Consultas
         {
             Expression<Func<Analisis, bool>> filtro = x => true;
             RepositorioBase<Analisis> repositorio = new RepositorioBase<Analisis>();
+       
            // List<TipoAnalisis> TiposAnalisis = new RepositorioBase<TipoAnalisis>().GetList(x => true);
             int id;
             switch (BuscarPorDropDownList.SelectedIndex)
@@ -38,8 +40,11 @@ namespace RegistroAnalisis.UI.Consultas
             }
             DateTime desdeTextBox = Utilitarios.Utils.ToFecha(DesdeTextBox.Text);
             DateTime FechaHasta = Utilitarios.Utils.ToFecha(HastaTextBox.Text);
-            List<Analisis> lista = repositorio.GetList(filtro).Where(c => c.fecha.Date >= desdeTextBox && c.fecha.Date <= FechaHasta).ToList();
-            this.BindGrid(lista);
+            if (fechaCheckBox.Checked)
+                lista = repositorio.GetList(filtro).Where(c => c.fecha >= desdeTextBox && c.fecha <= FechaHasta).ToList();
+            else
+                lista = repositorio.GetList(filtro);
+                this.BindGrid(lista);
         }
         private void BindGrid(List<Analisis> lista)
         {
