@@ -14,6 +14,8 @@ namespace Entidades
         [Key]
         public int AnalisisID { get; set; }
         public int PacienteID { get; set; }
+        public decimal Balance { get; set; }
+        public decimal Monto { get; set; }
         public DateTime fecha { get; set; }
         [ForeignKey("PacienteID")]
         public virtual Pacientes Pacientes { get; set; }

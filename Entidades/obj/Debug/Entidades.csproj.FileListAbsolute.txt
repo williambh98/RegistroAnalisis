@@ -3,3 +3,4 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\bin\Debug\Entidade
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Debug\Entidades.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Debug\Entidades.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache

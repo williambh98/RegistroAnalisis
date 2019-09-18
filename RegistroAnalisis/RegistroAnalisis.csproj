@@ -127,6 +127,7 @@
     <Content Include="UI\Consultas\Canalisis.aspx" />
     <Content Include="UI\Consultas\CTipoAnalisis.aspx" />
     <Content Include="UI\Registros\Ranalisis.aspx" />
+    <Content Include="UI\Registros\Rpago.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -177,6 +178,13 @@
     </Compile>
     <Compile Include="UI\Registros\Ranalisis.aspx.designer.cs">
       <DependentUpon>Ranalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Rpago.aspx.cs">
+      <DependentUpon>Rpago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Rpago.aspx.designer.cs">
+      <DependentUpon>Rpago.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utilitarios\Utils.cs" />
   </ItemGroup>

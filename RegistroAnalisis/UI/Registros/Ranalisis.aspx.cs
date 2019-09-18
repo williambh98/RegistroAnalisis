@@ -32,14 +32,6 @@ namespace RegistroAnalisis.UI.Registros
                 }
                 LlenarCombo();
                 ViewState["Analisis"] = new Analisis();
-                //RepositorioBase<TipoAnalisis> repositorioBase = new RepositorioBase<TipoAnalisis>();
-
-                //TipoADropdonwList.DataSource = repositorioBase.GetList(t => true);
-                //TipoADropdonwList.DataValueField = "TipoID";
-                //TipoADropdonwList.DataTextField = "Descripcion";
-                //TipoADropdonwList.DataBind();
-
-                //ViewState["Analisis"] = new Analisis();
             }
         }
         protected void BindGrid()
@@ -54,12 +46,17 @@ namespace RegistroAnalisis.UI.Registros
             analisis.AnalisisID = Utils.ToInt(IdTextBox.Text);
             analisis.PacienteID = PacientsDropdownList.SelectedValue.Length;
             analisis.fecha = DateTime.Now;
+            analisis.Monto = 0;
             return analisis;
         }
         private void Limpiar()
         {
             IdTextBox.Text = string.Empty;
             PacientsDropdownList.ClearSelection();
+            ResultadoTextBox.Text = string.Empty;
+            fechaTextBox.Text = DateTime.Now.ToString();
+            MontoTextBox.Text = 0.ToString();
+            BalanceTextBox.Text = 0.ToString();
             ViewState["Analisis"] = new Analisis();
             LlenarCombo();
             this.BindGrid();
@@ -70,8 +67,11 @@ namespace RegistroAnalisis.UI.Registros
             Limpiar();
             IdTextBox.Text = analisis.AnalisisID.ToString();
             PacientsDropdownList.SelectedValue = analisis.PacienteID.ToString();
-
+            MontoTextBox.Text = analisis.Monto.ToString();
+            BalanceTextBox.Text = analisis.Balance.ToString();
+            fechaTextBox.Text = analisis.fecha.ToString();
             ViewState["Analisis"] = analisis;
+            CalcularMonto();
             this.BindGrid();
         }
         private void LlenarCombo()
@@ -119,6 +119,7 @@ namespace RegistroAnalisis.UI.Registros
                 analisis.RemoverDetalle(row.RowIndex);
                 ViewState["Analisis"] = analisis;
                 this.BindGrid();
+                CalcularMonto();
             }
 
         }
@@ -138,9 +139,23 @@ namespace RegistroAnalisis.UI.Registros
             RepositorioBase<TipoAnalisis> repositorio = new RepositorioBase<TipoAnalisis>();
             if (!string.IsNullOrEmpty(DescripcionTextBox.Text))
             {
-                repositorio.Guardar(new TipoAnalisis(0, DescripcionTextBox.Text, DateTime.Now));
+                repositorio.Guardar(new TipoAnalisis(0, DescripcionTextBox.Text, Convert.ToDecimal(PrecioATexBox.Text), DateTime.Now));
             }
             LlenarCombo();
+        }
+        public void CalcularMonto()
+        {
+            //decimal Monto = 0;
+            //Analisis analisis = new Analisis();
+            //analisis = (Analisis)ViewState["Analisis"];
+            //foreach (var item in analisis.
+            //{
+            //    TipoAnalisis tipo = new RepositorioBase<TipoAnalisis>().Buscar(item.TipoAnalisisID);
+            //    Monto += tipo.EsNulo() ? 0 : tipo.Monto;
+            //}
+            //analisis.Monto = Monto;
+            //ViewState[KeyViewState] = analisis;
+            //this.BindGrid();
         }
         protected void GuardarButton_Click(object sender, EventArgs e)
         {

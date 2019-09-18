@@ -13,20 +13,22 @@ namespace Entidades
         [Key]
         public int TipoID { get; set; }
         public string Descripcion { get; set; }
-
+        public decimal Monto { get; set; }
         public DateTime fecha { get; set; }
 
         public TipoAnalisis()
         {
             TipoID = 0;
+            Monto = 0;
             Descripcion = string.Empty;
             fecha = DateTime.Now;
         }
 
-        public TipoAnalisis(int tipoID, string descripcion, DateTime fecha)
+        public TipoAnalisis(int tipoID, string descripcion, decimal monto, DateTime fecha)
         {
             TipoID = tipoID;
             Descripcion = descripcion;
+            Monto = monto;
             this.fecha = fecha;
         }
     }

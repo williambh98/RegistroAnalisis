@@ -23,7 +23,13 @@
                 <div class="col-md-4">
                     <asp:Button ID="BuscarButton" runat="server" Class="btn btn-success input-sm" Text="Buscar" OnClick="BuscarButton_Click" />
                 </div>
-            </div>
+            </div>'
+               <%--Selercionar solo por fecha--%>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <asp:CheckBox AutoPostBack="true" Checked="true" OnCheckedChanged="fechaCheckBox_CheckedChanged" ID="fechaCheckBox" runat="server" Text="Filtrar solo por fecha" />
+                        </div>
+                    </div>
             <%--Rango fecha--%>
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-2">

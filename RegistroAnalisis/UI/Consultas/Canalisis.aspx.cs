@@ -47,5 +47,19 @@ namespace RegistroAnalisis.UI.Consultas
             DatosGridView.DataBind();
         }
 
+        protected void FechaCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fechaCheckBox.Checked)
+            {
+                fechaCheckBox.Visible = true;
+                fechaCheckBox.Visible = true;
+            }
+            else
+            {
+                fechaCheckBox.Visible = false;
+                fechaCheckBox.Visible = false;
+            }
+        }
+
     }
 }

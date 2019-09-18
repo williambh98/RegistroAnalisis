@@ -94,6 +94,24 @@ namespace RegistroAnalisis.UI.Registros {
         protected global::System.Web.UI.WebControls.Button ResultadoButton;
         
         /// <summary>
+        /// MontoTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
+        
+        /// <summary>
+        /// BalanceTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BalanceTextBox;
+        
+        /// <summary>
         /// DatosGridView control.
         /// </summary>
         /// <remarks>
@@ -164,6 +182,15 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DescripcionTextBox;
+        
+        /// <summary>
+        /// PrecioATexBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PrecioATexBox;
         
         /// <summary>
         /// AgregarAnaliss control.
