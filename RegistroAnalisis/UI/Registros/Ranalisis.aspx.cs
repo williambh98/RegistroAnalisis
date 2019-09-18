@@ -15,7 +15,7 @@ namespace RegistroAnalisis.UI.Registros
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (!Page.IsPostBack)
             {
                 //si llego in id
@@ -85,7 +85,7 @@ namespace RegistroAnalisis.UI.Registros
             TipoADropdonwList.DataTextField = "Descripcion";
             TipoADropdonwList.DataBind();
 
-           
+
             RepositorioBase<Pacientes> repositorioPacientes = new RepositorioBase<Pacientes>();
             PacientsDropdownList.DataSource = repositorioPacientes.GetList(x => true);
             PacientsDropdownList.DataValueField = "PacienteID";

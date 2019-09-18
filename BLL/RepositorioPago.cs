@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-   public class RepositorioPago : RepositorioBase<Pago>
+    public class RepositorioPago : RepositorioBase<Pago>
     {
         public override Pago Buscar(int id)
         {
@@ -18,29 +18,28 @@ namespace BLL
             try
             {
                 pago = _contexto.pagos.Find(id);
-   
+
             }
             catch (Exception)
             {
                 throw;
             }
             return pago;
-             
+
         }
 
-        public override bool Guardar (Pago entity)
+        public override bool Guardar(Pago entity)
         {
-            RepositorioAnalisis repositorio = new RepositorioAnalisis();
+
             Contexto contexto = new Contexto();
-            foreach(var intem in entity.PagoDetalles.ToList())
+            foreach (var intem in entity.PagoDetalles.ToList())
             {
-                var Analisis = repositorio.Buscar(intem.AnalisisID);
-                Analisis.Balance -= Analisis.Monto;
-                contexto.Entry(Analisis).State = System.Data.Entity.EntityState.Modified;
+                var Analisis = contexto.Analisis.Find(intem.AnalisisID);
+                Analisis.Balance -= intem.Monto;
+                contexto.Entry(Analisis).State = EntityState.Modified;
             }
             bool paso = contexto.SaveChanges() > 0;
-            repositorio.Dispose();
-            if(paso)
+            if (paso)
             {
                 contexto.Dispose();
                 return base.Guardar(entity);
@@ -62,9 +61,9 @@ namespace BLL
                 using (Contexto contexto1 = new Contexto())
                 {
                     bool paso1 = false;
-                    foreach(var item in anterior.PagoDetalles.ToList())
+                    foreach (var item in anterior.PagoDetalles.ToList())
                     {
-                        if(!entity.PagoDetalles.Exists(p => p.PagoDetalleID == item.PagoDetalleID))
+                        if (!entity.PagoDetalles.Exists(p => p.PagoDetalleID == item.PagoDetalleID))
                         {
                             RepositorioAnalisis repsoitorio = new RepositorioAnalisis();
                             var A = repsoitorio.Buscar(item.AnalisisID);
@@ -76,10 +75,10 @@ namespace BLL
                             repsoitorio.Dispose();
                         }
                     }
-                   foreach(var item in entity.PagoDetalles)
+                    foreach (var item in entity.PagoDetalles)
                     {
                         var pago = EntityState.Unchanged;
-                        if(item.PagoDetalleID == 0)
+                        if (item.PagoDetalleID == 0)
                         {
                             RepositorioAnalisis repositorio = new RepositorioAnalisis();
                             var A = repositorio.Buscar(item.AnalisisID);
@@ -99,17 +98,17 @@ namespace BLL
             return paso;
         }
 
-        public override bool Eliminar (int id)
+        public override bool Eliminar(int id)
         {
             RepositorioAnalisis repositorio = new RepositorioAnalisis();
             Pago pago = Buscar(id);
             Contexto contexto = new Contexto();
-            foreach(var item in pago.PagoDetalles.ToList())
+            foreach (var item in pago.PagoDetalles.ToList())
             {
                 var A = repositorio.Buscar(item.AnalisisID);
                 A.Monto += item.Monto;
                 contexto.Entry(A).State = EntityState.Modified;
-                
+
             }
             bool paso = contexto.SaveChanges() > 0;
             if (paso)

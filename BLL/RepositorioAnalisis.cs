@@ -11,6 +11,10 @@ namespace BLL
 {
     public class RepositorioAnalisis : RepositorioBase<Analisis>
     {
+        public RepositorioAnalisis() : base()
+        {
+
+        }
         public override bool Guardar(Analisis entity)
         {
             entity.Balance = entity.Monto;
@@ -19,29 +23,32 @@ namespace BLL
         public override Analisis Buscar(int id)
         {
             Analisis analisis = new Analisis();
-            Contexto con = new Contexto();
             try
             {
-                analisis = _contexto.Analisis.Find(id);
-                if(analisis != null)
+                analisis = _contexto.Analisis.AsNoTracking().Where(x => x.AnalisisID == id).FirstOrDefault();
+                if (analisis != null)
                     analisis.detalle.Count();
-               
+
 
             }
             catch (Exception)
             {
                 throw;
             }
+            finally
+            {
+                _contexto.Dispose();
+                _contexto = new Contexto();
+            }
             return analisis;
         }
         public override bool Modificar(Analisis analisis)
         {
-            var Anterior = _contexto.Analisis.Find(analisis.AnalisisID);
+            var Anterior = Buscar(analisis.AnalisisID);
             bool paso = false;
             try
             {
-                
-                foreach (var item in Anterior.detalle)
+                foreach (var item in Anterior.detalle.ToList())
                 {
                     if (!analisis.detalle.Exists(d => d.DetalleID == item.DetalleID))
                     {
@@ -52,8 +59,9 @@ namespace BLL
                 foreach (var item in analisis.detalle)
                 {
 
-                    var estado = item.DetalleID > 0 ? EntityState.Modified : EntityState.Added;
-                    _contexto.Entry(item).State = estado;
+                    Contexto contexto = new Contexto();
+                    var estado = item.DetalleID > 0 ? EntityState.Unchanged : EntityState.Added;
+                    contexto.Entry(item).State = estado;
                 }
                 _contexto.Entry(analisis).State = EntityState.Modified;
                 if (_contexto.SaveChanges() > 0)

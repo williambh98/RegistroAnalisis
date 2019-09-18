@@ -24,7 +24,7 @@ namespace RegistroAnalisis.UI.Registros
                     if (user == null)
                         Utils.ShowToastr(this, "Id no existe", "Error", "error");
                     else
-                     LlenarCombo();
+                        LlenarCombo();
                     LlenarCampo(user);
                 }
                 LlenarCombo();
@@ -32,11 +32,11 @@ namespace RegistroAnalisis.UI.Registros
             }
 
         }
-            protected void BindGrid()
-            {
-                DatosGridView.DataSource = ((Pago)ViewState["Pago"]).PagoDetalles;
-                DatosGridView.DataBind();
-            }
+        protected void BindGrid()
+        {
+            DatosGridView.DataSource = ((Pago)ViewState["Pago"]).PagoDetalles;
+            DatosGridView.DataBind();
+        }
 
         private Pago LlenaClase()
         {
@@ -49,7 +49,7 @@ namespace RegistroAnalisis.UI.Registros
         private void Limpiar()
         {
             IdTextBox.Text = string.Empty;
-           AnalisisDropdownList.ClearSelection();
+            AnalisisDropdownList.ClearSelection();
             fechaTextBox.Text = DateTime.Now.ToString();
             MontoTextBox.Text = 0.ToString();
             BalanceTextBox.Text = 0.ToString();
@@ -71,7 +71,7 @@ namespace RegistroAnalisis.UI.Registros
             AnalisisDropdownList.DataValueField = "AnalisisID";
             AnalisisDropdownList.DataTextField = "AnalisisID";
             AnalisisDropdownList.DataBind();
-          
+
         }
         protected void BuscarButton_Click(object sender, EventArgs e)
         {
@@ -100,7 +100,7 @@ namespace RegistroAnalisis.UI.Registros
                 pago.RemoverPAgoDetalle(row.RowIndex);
                 ViewState["Analisis"] = pago;
                 this.BindGrid();
-        
+
             }
 
         }
@@ -108,8 +108,8 @@ namespace RegistroAnalisis.UI.Registros
         {
             Pago pago = new Pago();
             pago = (Pago)ViewState["Pago"];
-            pago.AgregarDetalle(0,Utils.ToInt(IdTextBox.Text),
-                                    Utils.ToInt(AnalisisDropdownList.SelectedValue),Convert.ToDecimal(MontoTextBox.Text),DateTime.Now);
+            pago.AgregarDetalle(0, Utils.ToInt(IdTextBox.Text),
+                                    Utils.ToInt(AnalisisDropdownList.SelectedValue), Convert.ToDecimal(MontoTextBox.Text), DateTime.Now);
             ViewState["Pago"] = pago;
             this.BindGrid();
 
@@ -173,11 +173,12 @@ namespace RegistroAnalisis.UI.Registros
 
         protected void AnalisisDropdownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-         if (AnalisisDropdownList.Items.Count > 0)
+            if (AnalisisDropdownList.Items.Count > 0)
             {
                 int AnalisisID = AnalisisDropdownList.SelectedValue.Length;
                 RepositorioAnalisis repositorio = new RepositorioAnalisis();
                 Analisis analisis = repositorio.Buscar(AnalisisID);
+                BalanceTextBox.Text = string.Empty;
                 BalanceTextBox.Text = analisis.Balance.ToString();
                 repositorio.Dispose();
             }
