@@ -14,7 +14,11 @@
                         <div class="col-md-4">
                             <asp:TextBox class="form-control input-sm" TextMode="Number" ID="IdTextBox" Text="0" runat="server"></asp:TextBox>
                         </div>
-                        <asp:Button class="btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" OnClick="BuscarButton_Click" />
+                        <asp:Button class="col-md-1 btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" OnClick="BuscarButton_Click" />
+                         <label for="fechaTextBox" class="col-md-2 control-label input-sm">Fecha: </label>
+                        <div class="col-md-2">
+                            <asp:TextBox class="form-control" ID="TextBox1" TextMode="Date" runat="server"></asp:TextBox>
+                        </div>
                     </div>
 
                     <%--Analisis pago--%>
@@ -22,7 +26,7 @@
                         <label for="AnalisisTextBox" class="col-md-3 control-label input-sm">Analisis: </label>
                         <div class="col-md-4">
                             <div>
-                                <asp:DropDownList ID="AnalisisDropdownList" AutoPostBack="true" OnSelectedIndexChanged ="AnalisisDropdownList_SelectedIndexChanged" CssClass=" form-control dropdown-item" AppendDataBoundItems="true" runat="server" Height="2.8em">
+                                <asp:DropDownList ID="AnalisisDropdownList" AutoPostBack="true" OnSelectedIndexChanged="AnalisisDropdownList_SelectedIndexChanged" CssClass=" form-control dropdown-item" AppendDataBoundItems="true" runat="server" Height="2.8em">
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -41,7 +45,6 @@
                             <asp:TextBox class="form-control input-sm" ReadOnly="False" ID="MontoTextBox" Text="0" runat="server"></asp:TextBox>
                         </div>
                     </div>
-
                     <%--  Fecha--%>
                     <div class="form-group">
                         <label for="fechaTextBox" class="col-md-3 control-label input-sm">Fecha: </label>

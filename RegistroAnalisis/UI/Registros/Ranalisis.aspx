@@ -24,6 +24,7 @@
                         <asp:Button class="btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" OnClick="buscarButton_Click" />
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="IdTextBox" ErrorMessage="*" ValidationGroup="Buscar"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="IdRegularExpressionValidator" runat="server" ControlToValidate="IdTextBox" ErrorMessage="Porfavor ingrese un numero" ValidationExpression="(^\d*\.?\d*[0-9]+\d*$)|(^[0-9]+\d*\.\d*$)" ValidationGroup="Buscar"></asp:RegularExpressionValidator>
+
                     </div>
                     <%--    Fecha--%>
                     <div class="form-group">

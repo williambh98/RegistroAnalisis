@@ -31,7 +31,7 @@
                         </div>
                     </div>
 
-            <%--Rango fecha--%>
+              <%--Rango fecha--%>
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-2">
                     <asp:Label Text="Desde" runat="server" />
@@ -42,7 +42,6 @@
                     <asp:TextBox ID="HastaTextBox" class="form-control input-group" TextMode="Date" runat="server" />
                 </div>
             </div>
-         
             <%--GRID--%>
             <div class="col-md-12">
                 <asp:GridView ID="DatosGridView"

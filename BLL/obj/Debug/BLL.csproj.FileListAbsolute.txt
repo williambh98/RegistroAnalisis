@@ -11,7 +11,6 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\Entidades.pdb
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.xml
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\BLL\obj\Debug\BLL.pdb
