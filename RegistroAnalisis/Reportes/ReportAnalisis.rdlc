@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.01306cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.01306cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.01306cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.01306cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -356,7 +356,7 @@
         <DataSetName>Analisis</DataSetName>
         <Top>0.70978cm</Top>
         <Height>1.2cm</Height>
-        <Width>10cm</Width>
+        <Width>12.05223cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -507,7 +507,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox18</rd:DefaultName>
         <Top>2.06461cm</Top>
-        <Left>7.5cm</Left>
+        <Left>9.03917cm</Left>
         <Height>0.6cm</Height>
         <Width>1.63217cm</Width>
         <ZIndex>6</ZIndex>
@@ -525,7 +525,7 @@
     <Height>1.11277in</Height>
     <Style />
   </Body>
-  <Width>4.85459in</Width>
+  <Width>4.80294in</Width>
   <Page>
     <PageHeader>
       <Height>3.07042cm</Height>
@@ -690,7 +690,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.54cm</Height>
+      <Height>0.9525cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -707,12 +707,20 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value> de </Value>
+                  <Value xml:space="preserve"> </Value>
                   <Style />
                 </TextRun>
                 <TextRun>
+                  <Value>de </Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
                   <Value>=Globals!OverallPageNumber</Value>
-                  <Style />
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -721,10 +729,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>9.82972cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>10.57855cm</Left>
           <Height>0.49417cm</Height>
-          <Width>2.29918cm</Width>
+          <Width>1.47368cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -754,8 +762,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox49</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>8.33867cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>9.0875cm</Left>
           <Height>0.49417cm</Height>
           <Width>1.4205cm</Width>
           <ZIndex>1</ZIndex>

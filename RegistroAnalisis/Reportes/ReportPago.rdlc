@@ -6,13 +6,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.54136cm</Width>
+              <Width>4.36421cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.54136cm</Width>
+              <Width>4.36421cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.54136cm</Width>
+              <Width>4.36421cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -279,7 +279,7 @@
         <DataSetName>Pago</DataSetName>
         <Top>0.8015cm</Top>
         <Height>1.27056cm</Height>
-        <Width>10.62408cm</Width>
+        <Width>13.09263cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -305,7 +305,6 @@
         </Paragraphs>
         <rd:DefaultName>Textbox4</rd:DefaultName>
         <Top>0.02117cm</Top>
-        <Left>0.26136cm</Left>
         <Height>0.63922cm</Height>
         <Width>4.57276cm</Width>
         <ZIndex>1</ZIndex>
@@ -375,8 +374,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Monto</rd:DefaultName>
-        <Top>2.14967cm</Top>
-        <Left>7.08273cm</Left>
+        <Top>2.18492cm</Top>
+        <Left>8.72434cm</Left>
         <Height>0.48711cm</Height>
         <Width>3.31611cm</Width>
         <ZIndex>3</ZIndex>
@@ -425,9 +424,9 @@
       </Textbox>
       <Line Name="Line3">
         <Top>0.78033cm</Top>
-        <Left>14.42513cm</Left>
+        <Left>13.19747cm</Left>
         <Height>0cm</Height>
-        <Width>-14.42513cm</Width>
+        <Width>-13.19747cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -438,7 +437,7 @@
       <Line Name="Line2">
         <Top>2.1305cm</Top>
         <Height>0cm</Height>
-        <Width>14.42513cm</Width>
+        <Width>13.19747cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -450,7 +449,7 @@
     <Height>1.07976in</Height>
     <Style />
   </Body>
-  <Width>5.69863in</Width>
+  <Width>5.19585in</Width>
   <Page>
     <PageHeader>
       <Height>3.01864cm</Height>
@@ -473,9 +472,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox44</rd:DefaultName>
           <Top>0.03528cm</Top>
-          <Left>9.30704cm</Left>
+          <Left>8.72434cm</Left>
           <Height>0.57713cm</Height>
-          <Width>5.00329cm</Width>
+          <Width>4.36829cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -490,7 +489,7 @@
           <Source>Embedded</Source>
           <Value>images</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>3.24632cm</Left>
+          <Left>2.91762cm</Left>
           <Height>1.52541cm</Height>
           <Width>5.63033cm</Width>
           <ZIndex>1</ZIndex>
@@ -529,7 +528,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
           <Top>1.56069cm</Top>
-          <Left>1.04574cm</Left>
+          <Left>0.71704cm</Left>
           <Height>0.75875cm</Height>
           <Width>10.10122cm</Width>
           <ZIndex>2</ZIndex>
@@ -593,7 +592,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox51</rd:DefaultName>
           <Top>2.35472cm</Top>
-          <Left>2.53511cm</Left>
+          <Left>2.20641cm</Left>
           <Height>0.6cm</Height>
           <Width>7.93611cm</Width>
           <ZIndex>3</ZIndex>
@@ -633,11 +632,15 @@
                 </TextRun>
                 <TextRun>
                   <Value> de </Value>
-                  <Style />
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
                 <TextRun>
                   <Value>=Globals!OverallPageNumber</Value>
-                  <Style />
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -646,10 +649,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>12.17534cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>10.25475cm</Left>
           <Height>0.49417cm</Height>
-          <Width>2.29918cm</Width>
+          <Width>1.7857cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -679,10 +682,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox49</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>10.64901cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>8.72842cm</Left>
           <Height>0.52945cm</Height>
-          <Width>1.4205cm</Width>
+          <Width>1.34994cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
