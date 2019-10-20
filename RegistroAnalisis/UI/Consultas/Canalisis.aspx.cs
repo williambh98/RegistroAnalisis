@@ -1,5 +1,6 @@
 ﻿using BLL;
 using Entidades;
+using Microsoft.Reporting.WebForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,10 @@ namespace RegistroAnalisis.UI.Consultas
         static List<Analisis> lista = new List<Analisis>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                LlenaReport();
+            }
         }
         protected void BuscarButton_Click(object sender, EventArgs e)
         {
@@ -64,6 +68,17 @@ namespace RegistroAnalisis.UI.Consultas
                 fechaCheckBox.Visible = false;
                 fechaCheckBox.Visible = false;
             }
+        }
+
+        public void LlenaReport()
+        {
+            ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "Popup", $"ShowReporte('');", true);
+            MyAnalisisReportViewer.ProcessingMode = ProcessingMode.Local;
+            MyAnalisisReportViewer.Reset();
+            MyAnalisisReportViewer.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportAnalisis.rdlc");
+            MyAnalisisReportViewer.LocalReport.DataSources.Clear();
+            MyAnalisisReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Analisis", Metodo.Analisis()));
+            MyAnalisisReportViewer.LocalReport.Refresh();
         }
 
     }

@@ -2,6 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <script type="text/javascript">
+       function ShowReporte(title) {
+           $("#ModalReporte .modal-title").html(title);
+           $("#ModalReporte").modal("show");
+       }
+    </script>
+    <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div class="panel panel-primary">
         <div class="panel-heading">Consulta de Analisis</div>
         <div class="panel-body">
@@ -61,6 +69,37 @@
                     <RowStyle BackColor="#EFF3FB" />
                 </asp:GridView>
             </div>
+             <%--Imprimir--%>
+            <div class="card-footer">
+                <div class="justify-content-start">
+                    <div class="form-group" style="display: inline-block">
+                        <button type="button" class="btn btn-success mt-4" data-toggle="modal" data-target=".bd-example-modal-lg">Imprimir</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Modal para mi Reporte.// -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+               <div class="modal-dialog" style="max-width: 600px!important; min-width: 300px!important">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">REPORTE ANALISIS</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <%--Viewer--%>
+                            <rsweb:ReportViewer ID="MyAnalisisReportViewer" runat="server" ProcessingMode="Local" Height="450px" Width="500px">
+                                <ServerReport ReportPath="" ReportServerUrl="" />
+                            </rsweb:ReportViewer>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+          </div>
+
         </div>
     </div>
 </asp:Content>

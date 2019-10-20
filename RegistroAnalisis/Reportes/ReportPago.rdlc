@@ -33,7 +33,7 @@
                                 <FontFamily>Corbel</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>DarkBlue</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -75,7 +75,7 @@
                                 <FontFamily>Corbel</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>DarkBlue</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -117,7 +117,7 @@
                                 <FontFamily>Corbel</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>#666666</Color>
+                                <Color>DarkBlue</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -279,7 +279,7 @@
         <DataSetName>Pago</DataSetName>
         <Top>0.8015cm</Top>
         <Height>1.27056cm</Height>
-        <Width>10.62409cm</Width>
+        <Width>10.62408cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -304,7 +304,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox4</rd:DefaultName>
-        <Top>0.03528cm</Top>
+        <Top>0.02117cm</Top>
         <Left>0.26136cm</Left>
         <Height>0.63922cm</Height>
         <Width>4.57276cm</Width>
@@ -339,10 +339,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>IDpago</rd:DefaultName>
-        <Top>2.14261cm</Top>
-        <Left>1.1938cm</Left>
+        <Top>2.1305cm</Top>
+        <Left>1.04574cm</Left>
         <Height>0.56472cm</Height>
-        <Width>1.11478cm</Width>
+        <Width>0.81845cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -401,6 +401,7 @@
                 <Value>Total:</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
+                  <Color>DarkBlue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -424,9 +425,9 @@
       </Textbox>
       <Line Name="Line3">
         <Top>0.78033cm</Top>
-        <Left>14.8908cm</Left>
+        <Left>14.42513cm</Left>
         <Height>0cm</Height>
-        <Width>-14.8908cm</Width>
+        <Width>-14.42513cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -437,7 +438,7 @@
       <Line Name="Line2">
         <Top>2.1305cm</Top>
         <Height>0cm</Height>
-        <Width>14.8908cm</Width>
+        <Width>14.42513cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -446,13 +447,13 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>1.09643in</Height>
+    <Height>1.07976in</Height>
     <Style />
   </Body>
-  <Width>5.86252in</Width>
+  <Width>5.69863in</Width>
   <Page>
     <PageHeader>
-      <Height>2.98336cm</Height>
+      <Height>3.01864cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -471,6 +472,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox44</rd:DefaultName>
+          <Top>0.03528cm</Top>
           <Left>9.30704cm</Left>
           <Height>0.57713cm</Height>
           <Width>5.00329cm</Width>
@@ -488,7 +490,7 @@
           <Source>Embedded</Source>
           <Value>images</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>3.50032cm</Left>
+          <Left>3.24632cm</Left>
           <Height>1.52541cm</Height>
           <Width>5.63033cm</Width>
           <ZIndex>1</ZIndex>
@@ -526,7 +528,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>1.52541cm</Top>
+          <Top>1.56069cm</Top>
           <Left>1.04574cm</Left>
           <Height>0.75875cm</Height>
           <Width>10.10122cm</Width>
@@ -590,7 +592,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox51</rd:DefaultName>
-          <Top>2.31944cm</Top>
+          <Top>2.35472cm</Top>
           <Left>2.53511cm</Left>
           <Height>0.6cm</Height>
           <Width>7.93611cm</Width>
@@ -645,7 +647,7 @@
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
           <Top>0.10583cm</Top>
-          <Left>12.59162cm</Left>
+          <Left>12.17534cm</Left>
           <Height>0.49417cm</Height>
           <Width>2.29918cm</Width>
           <Style>
@@ -678,7 +680,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox49</rd:DefaultName>
           <Top>0.10583cm</Top>
-          <Left>11.13584cm</Left>
+          <Left>10.64901cm</Left>
           <Height>0.52945cm</Height>
           <Width>1.4205cm</Width>
           <ZIndex>1</ZIndex>

@@ -253,7 +253,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reportes\ReportAnalisis.rdlc" />
     <EmbeddedResource Include="Reportes\ReportPago.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportTipoAnalisis.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

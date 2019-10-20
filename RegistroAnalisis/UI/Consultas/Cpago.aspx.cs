@@ -36,7 +36,7 @@ namespace RegistroAnalisis.UI.Consultas
                 case 1://ID
                     id = Utilitarios.Utils.ToInt(FiltroTextBox.Text);
                     filtro = c => c.IDpago == id;
-                    break;             
+                    break;
             }
             DateTime desdeTextBox = Utilitarios.Utils.ToFecha(DesdeTextBox.Text);
             DateTime FechaHasta = Utilitarios.Utils.ToFecha(HastaTextBox.Text);
@@ -76,16 +76,7 @@ namespace RegistroAnalisis.UI.Consultas
             MyPagoReportViewer.LocalReport.Refresh();
         }
 
-        //protected void ImprimirButton_Click(object sender, EventArgs e)
-        //{
-        //    ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "Popup", $"ShowReporte('');", true);
-        //    MyPagoReportViewer.ProcessingMode = ProcessingMode.Local;
-        //    MyPagoReportViewer.Reset();
-        //    MyPagoReportViewer.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportesEstudiante.rdlc");
-        //    MyPagoReportViewer.LocalReport.DataSources.Clear();
-        //    MyPagoReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Pago", Metodo.APago()));
-        //    MyPagoReportViewer.LocalReport.Refresh();
-        //}
+
     }
 }
 

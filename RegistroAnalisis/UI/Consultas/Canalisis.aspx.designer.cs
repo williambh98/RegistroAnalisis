@@ -7,11 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RegistroAnalisis.UI.Consultas {
-    
-    
-    public partial class Canalisis {
-        
+namespace RegistroAnalisis.UI.Consultas
+{
+
+
+    public partial class Canalisis
+    {
+
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+
         /// <summary>
         /// BuscarPorDropDownList control.
         /// </summary>
@@ -20,7 +31,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList BuscarPorDropDownList;
-        
+
         /// <summary>
         /// FiltroTextBox control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FiltroTextBox;
-        
+
         /// <summary>
         /// BuscarButton control.
         /// </summary>
@@ -38,7 +49,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BuscarButton;
-        
+
         /// <summary>
         /// fechaCheckBox control.
         /// </summary>
@@ -47,7 +58,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox fechaCheckBox;
-        
+
         /// <summary>
         /// DesdeTextBox control.
         /// </summary>
@@ -56,7 +67,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DesdeTextBox;
-        
+
         /// <summary>
         /// HastaTextBox control.
         /// </summary>
@@ -65,7 +76,7 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox HastaTextBox;
-        
+
         /// <summary>
         /// DatosGridView control.
         /// </summary>
@@ -74,5 +85,14 @@ namespace RegistroAnalisis.UI.Consultas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView DatosGridView;
+
+        /// <summary>
+        /// MyAnalisisReportViewer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.Reporting.WebForms.ReportViewer MyAnalisisReportViewer;
     }
 }

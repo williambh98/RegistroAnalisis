@@ -28,5 +28,26 @@ namespace BLL
 
             return list;
         }
+
+        public static List<Analisis> Analisis()
+        {
+            Expression<Func<Analisis, bool>> filtro = p => true;
+            RepositorioBase<Analisis> repositorio = new RepositorioBase<Analisis>();
+            List<Analisis> list = new List<Analisis>();
+
+            list = repositorio.GetList(filtro);
+
+            return list;
+        }
+        public static List<TipoAnalisis> TipoAnalisis()
+        {
+            Expression<Func<TipoAnalisis, bool>> filtro = p => true;
+            RepositorioBase<TipoAnalisis> repositorio = new RepositorioBase<TipoAnalisis>();
+            List<TipoAnalisis> list = new List<TipoAnalisis>();
+
+            list = repositorio.GetList(filtro);
+
+            return list;
+        }
     }
 }
