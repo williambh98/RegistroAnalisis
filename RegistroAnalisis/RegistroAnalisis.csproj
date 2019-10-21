@@ -98,6 +98,8 @@
     <Content Include="RegistroAnalisisBDWebDataSet.xsc">
       <DependentUpon>RegistroAnalisisBDWebDataSet.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\analisisappwilliam - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\analisisappwilliam - Web Deploy.pubxml" />
     <None Include="RegistroAnalisisBDWebDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>RegistroAnalisisBDWebDataSet.Designer.cs</LastGenOutput>

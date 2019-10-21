@@ -1,0 +1,13 @@
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\DAL.dll.config
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\DAL.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\DAL.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\Entidades.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\EntityFramework.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\Entidades.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\EntityFramework.xml
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\obj\Release\DAL.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\DAL\obj\Release\DAL.pdb

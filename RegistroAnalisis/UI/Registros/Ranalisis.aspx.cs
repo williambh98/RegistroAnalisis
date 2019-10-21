@@ -15,7 +15,7 @@ namespace RegistroAnalisis.UI.Registros
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            fechaTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
             if (!Page.IsPostBack)
             {
                 //si llego in id
@@ -141,6 +141,15 @@ namespace RegistroAnalisis.UI.Registros
             if (!string.IsNullOrEmpty(DescripcionTextBox.Text))
             {
                 repositorio.Guardar(new TipoAnalisis(0, DescripcionTextBox.Text, Convert.ToDecimal(PrecioATexBox.Text), DateTime.Now));
+            }
+            LlenarCombo();
+        }
+        protected void AgregarPacietes_Click(object sender, EventArgs e)
+        {
+            RepositorioBase<Pacientes> repositorio = new RepositorioBase<Pacientes>();
+            if (!string.IsNullOrEmpty(DescripcionTextBox.Text))
+            {
+                repositorio.Guardar(new Pacientes(0, NombrePacienteTextBox.Text, "0","0", DateTime.Now));
             }
             LlenarCombo();
         }

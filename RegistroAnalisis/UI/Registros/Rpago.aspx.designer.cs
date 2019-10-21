@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RegistroAnalisis.UI.Registros {
-    
-    
-    public partial class Rpago {
-        
+namespace RegistroAnalisis.UI.Registros
+{
+
+
+    public partial class Rpago
+    {
+
         /// <summary>
         /// IdTextBox control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox IdTextBox;
-        
+
         /// <summary>
         /// BuscarButton control.
         /// </summary>
@@ -29,43 +31,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BuscarButton;
-        
-        /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// AnalisisDropdownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AnalisisDropdownList;
-        
-        /// <summary>
-        /// BalanceTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BalanceTextBox;
-        
-        /// <summary>
-        /// MontoTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
-        
+
         /// <summary>
         /// fechaTextBox control.
         /// </summary>
@@ -74,7 +40,34 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox fechaTextBox;
-        
+
+        /// <summary>
+        /// AnalisisDropdownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList AnalisisDropdownList;
+
+        /// <summary>
+        /// BalanceTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BalanceTextBox;
+
+        /// <summary>
+        /// MontoTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
+
         /// <summary>
         /// AgregarButton control.
         /// </summary>
@@ -83,7 +76,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AgregarButton;
-        
+
         /// <summary>
         /// DatosGridView control.
         /// </summary>
@@ -92,7 +85,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView DatosGridView;
-        
+
         /// <summary>
         /// NuevoButton control.
         /// </summary>
@@ -101,7 +94,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button NuevoButton;
-        
+
         /// <summary>
         /// GuadarButton control.
         /// </summary>
@@ -110,7 +103,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button GuadarButton;
-        
+
         /// <summary>
         /// EliminarButton control.
         /// </summary>
@@ -119,7 +112,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button EliminarButton;
-        
+
         /// <summary>
         /// EliminarRequiredFieldValidator control.
         /// </summary>
@@ -128,7 +121,7 @@ namespace RegistroAnalisis.UI.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator EliminarRequiredFieldValidator;
-        
+
         /// <summary>
         /// EliminarRegularExpressionValidator control.
         /// </summary>

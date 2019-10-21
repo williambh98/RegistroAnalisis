@@ -48,6 +48,7 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\EnvDTE.
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.VisualStudio.Shell.Interop.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.ReportViewer.WinForms.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.Build.Framework.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\stdole.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.VisualStudio.TextManager.Interop.dll
@@ -73,7 +74,6 @@ C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microso
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.MSXML.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.Build.Utilities.Core.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
-C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\Microsoft.Build.Framework.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\VSLangProj2.dll
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\BLL.pdb
 C:\Users\willi\Desktop\Aplicada ll\Registo analisis\RegistroAnalisis\bin\BLL.dll.config

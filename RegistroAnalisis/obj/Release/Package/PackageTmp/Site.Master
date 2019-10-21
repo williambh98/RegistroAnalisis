@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RegistroAnalisis.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/content/toastr.css" rel="stylesheet" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Analisis.do</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>       
+     <%--Menu Analisis--%>
+    <div class="container-">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <%--  <li><a href="#" style="font-family: Arial; font-size: 16px">Inicio</a></li>--%>
+                    <li class="dropdown">
+
+                        <a class="dropdown-toggle" data-toggle="dropdown" style="font-family: Arial; font-size: 16px">Registros<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="font-family: Arial; font-size: 16px">
+                            <li><a href="/UI/Registros/Ranalisis.aspx">Analisis</a></li>
+                            <li><a href="/UI/Registros/Rpago.aspx">Pago</a></li>          
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" style="font-family: Arial; font-size: 16px">Consultas<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="font-family: Arial; font-size: 16px">
+                            <li><a href="/UI/Consultas/Canalisis.aspx">Analisis</a></li>
+                            <li><a href="/UI/Consultas/CTipoAnalisis.aspx">TipoAnalisis</a></li>
+                            <li><a href="/UI/Consultas/Cpago.aspx">Pago</a></li>
+                        </ul>
+                    </li>
+                    <%--<li><a href="#" style="font-family: Arial; font-size: 16px">Ayuda</a></li>--%>
+                </ul>
+            </div>
+            <div class="clearfix visible-lg-block"></div>
+        </nav>
+    </div>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Registro Analisis</p>
+            </footer>
+        </div>
+</body>
+</html>

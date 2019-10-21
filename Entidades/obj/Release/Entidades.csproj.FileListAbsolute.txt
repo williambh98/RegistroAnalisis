@@ -1,0 +1,5 @@
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\bin\Release\Entidades.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\bin\Release\Entidades.pdb
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Release\Entidades.csprojAssemblyReference.cache
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Release\Entidades.dll
+C:\Users\willi\Desktop\Aplicada ll\Registo analisis\Entidades\obj\Release\Entidades.pdb
