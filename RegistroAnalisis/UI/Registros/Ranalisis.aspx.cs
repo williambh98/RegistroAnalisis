@@ -147,9 +147,9 @@ namespace RegistroAnalisis.UI.Registros
         protected void AgregarPacietes_Click(object sender, EventArgs e)
         {
             RepositorioBase<Pacientes> repositorio = new RepositorioBase<Pacientes>();
-            if (!string.IsNullOrEmpty(DescripcionTextBox.Text))
+            if (!string.IsNullOrEmpty(NombrePacienteTextBox.Text))
             {
-                repositorio.Guardar(new Pacientes(0, NombrePacienteTextBox.Text, "0","0", DateTime.Now));
+                repositorio.Guardar(new Pacientes(0, NombrePacienteTextBox.Text, DireccionTextBox.Text,TelefonoTextBox.Text, DateTime.Now));
             }
             LlenarCombo();
         }

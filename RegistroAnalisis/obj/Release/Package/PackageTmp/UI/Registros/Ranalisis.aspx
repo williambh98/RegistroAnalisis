@@ -30,11 +30,11 @@
                     <%--  Pacienetes--%>
                     <div class="form-group">
                         <label for="PacienteTextBox" class="col-md-3 control-label input-sm">Paciente: </label>
-                        <div class="col-md-6">                        
-                                <asp:DropDownList ID="PacientsDropdownList" CssClass=" form-control dropdown-item" AppendDataBoundItems="true" runat="server" Height="2.8em">
-                                </asp:DropDownList>
-                            </div>
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalPacientes" runat="server">+</button>                     
+                        <div class="col-md-6">
+                            <asp:DropDownList ID="PacientsDropdownList" CssClass=" form-control dropdown-item" AppendDataBoundItems="true" runat="server" Height="2.8em">
+                            </asp:DropDownList>
+                        </div>
+                        <button aria-describedby="PacientsDropdownList" type="button" class="btn btn-info" data-toggle="modal" data-target="#PacienteModal" runat="server">+</button>
                     </div>
                     <%--TipoAnalisis--%>
                     <div class="form-group">
@@ -43,7 +43,6 @@
                             <asp:DropDownList ID="TipoADropdonwList" CssClass=" form-control dropdown-toggle-split" AppendDataBoundItems="true" runat="server" Height="2.5em">
                             </asp:DropDownList>
                         </div>
-                        <%-- <asp:Button Text="Agregar" class="btn btn-info" runat="server" ID="Button1" data-toggle="modal" data-target="#TipoanalisisModal" />--%>
                         <button aria-describedby="TipoADropdonwList" type="button" class="btn btn-info" data-toggle="modal" data-target="#TipoAModal" runat="server">+</button>
                     </div>
                     <%--Resultados--%>
@@ -151,30 +150,53 @@
         </div>
     </div>
 
-     <!-- Modal para Pacientes Analisis -->
-    <div class="modal fade" id="ModalPacientes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Pacientes Analisis -->
+    <div class="modal fade" id="PacienteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog ml-sm-auto" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="AgregarPacientesLB">Agregar Pacientes Rapido!!</h5>
+                    <h5 class="modal-title" id="AgregarPaciente">AGREGAR PACIENTE</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <%--NombrePacienteTextBox--%>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="Nombre">Nombre </span>
+                            <span class="input-group-text" id="Nombre">Nombre:  </span>
                         </div>
-                        <div aria-describedby="DescripcionLb">
+                        <div aria-describedby="Nombre">
                             <asp:TextBox ID="NombrePacienteTextBox" runat="server" class="form-control input-sm"></asp:TextBox>
-                        </div>                      
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <asp:Button ID="Pacientes" class="btn btn-success" Text="Guardar" runat="server" data-dismiss="modal" UseSubmitBehavior="false" OnClick="AgregarPacietes_Click" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="Direccion">Direccion:  </span>
+                        </div>
+                        <div aria-describedby="Direeccion">
+                            <asp:TextBox ID="DireccionTextBox" runat="server" class="form-control input-sm"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="Telefono">Telefono:  </span>
+                        </div>
+                        <div aria-describedby="Telefono">
+                            <asp:TextBox ID="TelefonoTextBox" TextMode="Phone" runat="server" class="form-control input-sm"></asp:TextBox>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="Fecha">Fecha:  </span>
+                            </div>
+                            <div aria-describedby="Fecha">
+                                <asp:TextBox ID="Fecha1TextBox" Texmode="date" runat="server" class="form-control input-sm"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal1">Cerrar</button>
+                        <asp:Button ID="Button" class="btn btn-success" Text="Guardar" runat="server" data-dismiss="modal" UseSubmitBehavior="false" OnClick="AgregarPacietes_Click" />
+                    </div>
                 </div>
             </div>
         </div>

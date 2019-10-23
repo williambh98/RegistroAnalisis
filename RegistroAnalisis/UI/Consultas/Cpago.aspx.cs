@@ -16,6 +16,8 @@ namespace RegistroAnalisis.UI.Consultas
         static List<PagoDetalle> lista = new List<PagoDetalle>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DesdeTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            HastaTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
             if (!Page.IsPostBack)
             {
                 LlenaReport();

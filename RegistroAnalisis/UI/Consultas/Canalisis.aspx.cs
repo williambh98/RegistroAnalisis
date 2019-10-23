@@ -16,6 +16,8 @@ namespace RegistroAnalisis.UI.Consultas
         static List<Analisis> lista = new List<Analisis>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DesdeTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            HastaTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
             if (!Page.IsPostBack)
             {
                 LlenaReport();
@@ -75,7 +77,7 @@ namespace RegistroAnalisis.UI.Consultas
             ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "Popup", $"ShowReporte('');", true);
             MyAnalisisReportViewer.ProcessingMode = ProcessingMode.Local;
             MyAnalisisReportViewer.Reset();
-            MyAnalisisReportViewer.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportAnalisis.rdlc");
+            MyAnalisisReportViewer.LocalReport.ReportPath = Server.MapPath(@"~\Reportes\ReportAnalisis.rdlc");
             MyAnalisisReportViewer.LocalReport.DataSources.Clear();
             MyAnalisisReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Analisis", Metodo.Analisis()));
             MyAnalisisReportViewer.LocalReport.Refresh();
